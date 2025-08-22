@@ -1,0 +1,10 @@
+.tudo ,.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.butoes {
+width: 80px;
+
+}
