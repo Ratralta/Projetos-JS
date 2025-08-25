@@ -1,4 +1,6 @@
-const calcular = document.getElementById('calcular') // tag do botão de submit
+const calcular = document.getElementById('calcular') // tag do botão **imc**
+
+const calcular_rcq = document.getElementById('box_2_calcular') // tag do botão **rcq**
 
 
 
@@ -53,8 +55,65 @@ function check_imc_categoria(_value)
     return retorno // retornando string depedendo da situação 
 }
 
+function calc_RCQ()
+{
+    const idade = document.getElementById('box_2_idade').value; // o ".value" pega o valor do input
+    const cintura = document.getElementById('box_2_cintura').value;
+    const quadril = document.getElementById('box_2_quadril').value;
+
+    let resultado = cintura/quadril;
+    resultado = resultado.toFixed(2)
+    const botao = document.getElementById('box_2_calcular_resultado'); // pegando a tag do texto
+    
+    botao.textContent = `RCQ : ${resultado} , seu resultado foi :  ${check_rcq_categoria(resultado,idade)}`
+}
+
+function check_rcq_categoria(_value,_idade)
+{
+    let retorno = ""; // variavel que vai retorna
+    let idade_variavel  = 0; // depende da idade da pessoa  
+
+    if (_idade < 20)
+    {
+    return "Da certo não"  
+    }
+    else if (_idade < 29)
+    {idade_variavel += 0.01}
+    else if (_idade < 39)
+    {idade_variavel += 0.02}
+    else if (_idade < 49)
+    {idade_variavel += 0.03}
+    else if (_idade < 59)
+    {idade_variavel += 0.04}
+    else if (_idade < 69)
+    {idade_variavel += 0.04}
+    else
+    {
+    return "Da certo não"    
+    }
+
+    
+
+    if (_value < 0.83+idade_variavel){
+    retorno = "Abaixo"
+    } 
+    else if (_value <= 0.88+idade_variavel){
+    retorno = "Moderado"
+    }
+    else if (_value <= 0.94+idade_variavel){
+    retorno = "Alto"
+    }
+    else{ // isso não é pra acontecer
+    retorno = "Muito Alto"
+    }
+
+
+    return retorno // retornando string depedendo da situação 
+}
+
 
 
 
 
 calcular.addEventListener('click',calc_imc) // adicionando um evento para o botão
+calcular_rcq.addEventListener('click',calc_RCQ)

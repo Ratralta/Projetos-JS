@@ -7,6 +7,9 @@ main{
 
 }
 
+
+
+/* ###################################### Calculador de imc : */
 .container{
   display: flex;
   flex-direction: column;
@@ -29,15 +32,40 @@ main{
   border-bottom: solid 5px black;
   margin-bottom: 20px;
 }
+/* ###################################### Calculador de imc.  */
 
-.input {
+
+/* ###################################### Relação da cintura e o quadril : */
+.Box_2{
   display: flex;
-  width: 300px;
-  height: 50px;
-  justify-content: space-between;
+  flex-direction: column;
+  background: rgb(0,198,255);
+  width: 400px;
+  height: 600px;
   align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  box-shadow: 0 0 10px black;
 }
-.input input {
+
+.box_2_titulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  font: bold 2.0rem serif;
+  border-bottom: solid 5px black;
+  margin-bottom: 20px;
+}
+/* ###################################### Relação da cintura e o quadril.  */
+
+
+
+
+
+/* ###################################### template do input :  */
+.input input {  
   width: 200px;
   height: 50px;
   border-radius: 5px;
@@ -50,7 +78,11 @@ main{
 .input label {
   font: bold 1.5rem serif;
 }
+/* ###################################### template do input.   */
 
+
+
+/* ###################################### template de todos os button : */
 button{
   width: 300px;
   height: 40px;
@@ -61,6 +93,22 @@ button{
   border-radius: 5px;
   cursor: pointer;
 }
+/* ###################################### template de todos os button.  */
+
+
+
+/* ###################################### area dos input :  */
+.input {
+  display: flex;
+  width: 300px;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ###################################### area dos input.   */
+
+
+
 
 .result{
   display: flex;
