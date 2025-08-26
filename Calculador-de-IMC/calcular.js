@@ -73,7 +73,7 @@ function check_rcq_categoria(_value,_idade)
     let retorno = ""; // variavel que vai retorna
     let idade_variavel  = 0; // depende da idade da pessoa  
 
-    if (_idade < 20)
+    if (_idade < 20) // depedendo da idade, muda o calculo 
     {
     return "Da certo não"  
     }
@@ -92,10 +92,8 @@ function check_rcq_categoria(_value,_idade)
     return "Da certo não"    
     }
 
-    
-
     if (_value < 0.83+idade_variavel){
-    retorno = "Abaixo"
+    retorno = "Baixo"
     } 
     else if (_value <= 0.88+idade_variavel){
     retorno = "Moderado"
@@ -106,7 +104,6 @@ function check_rcq_categoria(_value,_idade)
     else{ // isso não é pra acontecer
     retorno = "Muito Alto"
     }
-
 
     return retorno // retornando string depedendo da situação 
 }
