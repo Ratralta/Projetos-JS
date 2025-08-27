@@ -7,17 +7,23 @@ let quebrada = false;
 function ligar_lampada() {
     if (!quebrada) {
         lamp.src = './img/ligada.jpeg';
+        lamp.classList.add('ligada');
+        lamp.classList.remove('quebrada');
     }
 }
 
 function desligar_lampada() {
     if (!quebrada) {
         lamp.src = './img/desligada.jpeg';
+        lamp.classList.remove('ligada');
+        lamp.classList.remove('quebrada');
     }
 }
 
 function quebrar_lampada() {
     lamp.src = './img/quebrada.jpeg';
+    lamp.classList.remove('ligada');
+    lamp.classList.add('quebrada');
     quebrada = true;
 }
 
