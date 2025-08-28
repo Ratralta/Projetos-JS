@@ -27,10 +27,10 @@ overflow: hidden; /* Isso faz com que tudo que está fora dessa div, fique invis
 .game_cano {
     position: absolute; 
     bottom: 0;
-    width: 120px; /* Size*/
+    width: 100px; /* Size*/
 
 
-    animation: game_cano_animation 2s infinite linear; /* Isso mexe na posição do cano */
+    animation: game_cano_animation 1.5s infinite linear; /* Isso mexe na posição do cano */
 }
 
 @keyframes game_cano_animation {
@@ -49,28 +49,22 @@ overflow: hidden; /* Isso faz com que tudo que está fora dessa div, fique invis
 
 
 /* ############################################# Mario :  */
-.mario {
+.mario_class {
     width: 120px;
     position: absolute;
     bottom: 0;
-
-
-
 }
 
 .mario_jump { /* Class para quando chamada, faça o "mario" pular. */
-    animation: game_mario_jump 0.5s infinite ;
+    animation: game_mario_jump 0.5s;
 }
 
 @keyframes game_mario_jump {
 0% {
     bottom: 0;
 }
-25% {
-    bottom: 190px;
-}
 50% {
-    bottom: 240px;
+    bottom: 290px;
 }
 100% {
     bottom: 0;
