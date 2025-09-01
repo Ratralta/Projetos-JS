@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Padrão HTML com JS</title>
+    <script>
+        nome1 = window.prompt("qual seu nome?"); // Gera um popup na tela do usuario, que pede para escrever o nome.
+
+        if( nome1 != null && nome1!="")
+        {
+        document.write("Olá, "+nome1+"!");
+        }
+        else
+        {
+        document.write("Olá pessoa desconhecida estranha")
+        }
+    </script>
+</head>
+<body>
+
+<script>
+    function validar()
+    {
+        window.alert(document.cadastro.nome.value);
+        if(document.cadastro.nome.value == "") // se o form "cadastro", o input "nome" tiver um valor ""
+        {
+            window.alert("Hnmmmmmm, qual teu nome?");
+            document.cadastro.nome.focus(); // foca no input "nome", do form "cadastro"
+            return false;
+        }
+        if (document.cadastro.observacoes.value == "")
+        {
+            window.alert("ahh, hmm, hnnmmmmm tu tem alguma observação não?");
+            document.cadastro.observacoes.focus()
+            return false;
+        }
+    }
+</script>
+
+
+<form action="mailto:teste@gmail.com" method="post" enctype="text/plain" name="cadastro"> </form>
+   <p> Preencha os campos abaixo AGORA</p> 
+   <br>
+   <br>
+   <br>
+
+    <p> Nome completo : </p>
+    <input type="text" name="nome" size="35">
+
+    <p> Seu e-mail : </p>
+    <input type="text" name="email" size="35">
+
+    <p> Sexo : </p>
+    <input type="radio" name="sexo" value="mulher"> Femia </input>
+    <input type="radio" name="sexo" value="homem"> Macho </input>
+
+    <p> Estado-civil : </p>
+    <input type="radio" name="civil" value="solteiro"> Solteiro </input>
+    <input type="radio" name="civil" value="casado"> Casado </input>
+    <input type="radio" name="civil" value="enrolado"> Enrolado </input>
+
+    <p> Bens que possui : </p>
+    <input type="checkbox" name="bens" value="casa"> Casa </input>
+    <input type="checkbox" name="bens" value="automovel"> Automovel </input>
+    <input type="checkbox" name="bens" value="moto"> Moto </input>
+
+    <p> Faixa de idade : </p> 
+        <select name="faixaidade">
+            <option value="3a10"> 3 a 10</option>
+            <option value="11a25"> 11 a 25</option>
+            <option value="26a35"> 26 a 35</option>
+            <option value="36a55"> 36 a 55</option>
+            <option value="56a90"> 50 a 90</option>
+        </select>
+
+    <p> Hobby preferido : </p> 
+        <select name="hobby">
+            <option value="livro"> Livros</option>
+            <option value="musica"> Musicas </option> 
+        </select>
+
+    <p> Observações Gerais: </p> 
+    <br>
+    <textarea name="observacoes" rows="5" cols="60"></textarea> 
+    <br>
+
+    <input type="submit" value="Enviar os dados" onclick="validar();"> 
+    <input type="reset" value="Clear All Data">
+
+</form>
+</body>
+</html>
