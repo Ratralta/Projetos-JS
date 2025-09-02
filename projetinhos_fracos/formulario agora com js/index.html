@@ -15,31 +15,30 @@
         {
         document.write("Olá pessoa desconhecida estranha")
         }
+
     </script>
 </head>
 <body>
 
-<script>
+    <script>
     function validar()
     {
-        window.alert(document.cadastro.nome.value);
-        if(document.cadastro.nome.value == "") // se o form "cadastro", o input "nome" tiver um valor ""
+        if(document.cadastro.nome.value == "")// se o form "cadastro", o input "nome" tiver um valor ""
         {
             window.alert("Hnmmmmmm, qual teu nome?");
             document.cadastro.nome.focus(); // foca no input "nome", do form "cadastro"
-            return false;
+            //return false;
         }
-        if (document.cadastro.observacoes.value == "")
+        else if (document.cadastro.observacoes.value == "")
         {
             window.alert("ahh, hmm, hnnmmmmm tu tem alguma observação não?");
             document.cadastro.observacoes.focus()
-            return false;
+            //return false;
         }
     }
-</script>
+    </script>
 
-
-<form action="mailto:teste@gmail.com" method="post" enctype="text/plain" name="cadastro"> </form>
+<form action="mailto:teste@gmail.com" method="post" enctype="text/plain" name="cadastro"> <!-- action="mailto:teste@gmail.com" -->          
    <p> Preencha os campos abaixo AGORA</p> 
    <br>
    <br>
@@ -87,7 +86,9 @@
 
     <input type="submit" value="Enviar os dados" onclick="validar();"> 
     <input type="reset" value="Clear All Data">
-
 </form>
+
+
+
 </body>
 </html>

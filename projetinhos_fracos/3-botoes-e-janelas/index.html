@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 botões e janelas</title>
+
+    <script>
+        function abre_janela1()
+        {
+            window.open("http://www.google.com")
+        }
+        function abre_janela2()
+        {
+            window.open("http://www.google.com", "simples", "width=350", "height=400");
+        }
+        function abre_janela3()
+        {
+            window.open("http://www.google.com", "simples", "menubar, scrollbars width=300, height=200");
+        }
+
+    </script>
+</head>
+<body>
+    
+    <form>
+        <p>Clica ai man</p>
+        <input type="button" name="abrir" value="janela full" onclick="abre_janela1()"> 
+        <br>
+        <br>
+        <input type="button" name="abrir" value="janela minimizada" onclick="abre_janela2()"> 
+        <br>
+        <br>
+        <input type="button" name="abrir" value="janelinha" onclick="abre_janela3()"> 
+    </form>
+</body>
+</html>
