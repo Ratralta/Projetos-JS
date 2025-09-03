@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta e amostra o resultado como botão</title>
+
+    <style>
+        body {
+            height: 1000px;
+            width: 1000px;
+        }
+    </style>
+
+    <script>
+        function answer_correct()
+        {
+            alert("Acertou mano parabens");
+        }
+        function answer_false(_tag)
+        {
+            alert("Errou lol");
+            desaparece_tag(_tag);
+        }
+
+        function desaparece_tag(_tag)
+        {
+            _tag.style.opacity = '0%';
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <p>Quantos anos tem um século?</p>
+        <div id="a"> <input type="button" value="a" onclick="answer_false(this)"> <a> 1000 anos </a>  </input> </div>
+        <div id="b"> <input type="button" value="b" onclick="answer_false(this)">  <a> 1 anos </a> </input> </div>
+        <div id="c"> <input type="button" value="c" onclick="answer_false(this)"> <a> 10 anos </a> </input> </div>
+        <div id="d"> <input type="button" value="d" onclick="answer_correct()"> <a> 100 anos </a> </input> </div>
+    </form>
+</body>
+</html>

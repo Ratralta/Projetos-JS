@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função somar e multiplicar</title>
+    
+    <script>
+        function somar()
+        {
+            let x = eval(document.prova.c1.value)+eval(document.prova.c2.value)+eval(document.prova.c3.value);
+            document.prova.c4.value = x;
+        }
+        
+        function multiplicar()
+        {
+            let y = eval(document.prova.c1.value)*eval(document.prova.c2.value)*eval(document.prova.c3.value);
+            document.prova.c4.value = y; // Atribuindo o valor do calculo na tag <c4> 
+        }
+    </script>
+</head>
+<body>
+    <form name="prova">
+        <p> Entre com os valores nos campos e </p>
+
+
+    </form>
+    
+</body>
+</html>

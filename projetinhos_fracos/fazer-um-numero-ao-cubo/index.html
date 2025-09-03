@@ -8,27 +8,22 @@
     <script>
         function quadrado(_x)
         {
-            document.write(_x*_x);
+            return _x*_x;
         }
         function cubo(_x)
         {
-            document.write(_x*_x*_x);
+            return _x*_x*_x;
         }
-
         y=5;
-        document.write("O quadrado de " +y+" é igual a ");
-        quadrado(y);
+        document.write("O quadrado de " +y+ " é igual a ");
+        document.write(quadrado(y));
     </script>
 </head>
 <body>
     <form>
         <br> 
-        Coloca um numero e da TAB.
-        <br>
-
+        <p> Coloca um numero e da TAB. </p>
+        <input type="text" name="aocubo" value="" onblur="alert('O cubo de ' + this.value + ' é ' + cubo(this.value))">
     </form>
-
-
-
 </body>
 </html>
