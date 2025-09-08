@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesh.css">
+    <title>Somar 2 númeors</title>
+</head>
+<body>
+
+    <h1> 08/09/25 - Exercício JS </h1>
+    <h3> Coloca 2 números ae mano </h3>
+
+    <section>
+        <input type="text" id="campo1" placeholder="Valor 1">
+        <input type="text" id="campo2" placeholder="Valor 2">
+    </section>
+
+    <button onclick="somar()">Somar!!!</button>
+    <button onclick="subtrair()">Subtrair!!!</button>
+    <button onclick="multplicar()">Multiplicar!!!</button>
+    <button onclick="dividir()">Dividir!!!</button>
+
+
+
+
+    <!-- Resultados -->
+
+    <h4>Resultado em um parágrafo: </h4> <!-- PARÁGRAFO -->
+    <p id="resultado-p"></p>
+
+
+    <h4>Resultado em uma tabela : </h4> <!-- TABELA -->
+    <table>
+        <td id="resultado-table"></td>
+    </table>
+
+
+    <h4>Resultado dentro de uma Div : </h4> <!-- DIV -->
+    <div class="container" id="resultado-div"> 
+
+    </div>
+
+
+    <h4>Resultado dentro de um Input : </h4> <!-- INPUT -->
+    <input type="text" id="resultado-input">
+
+    <script src="calcular_e_mostrar.js"></script>
+</body>
+</html>
