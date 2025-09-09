@@ -1,4 +1,7 @@
-@import url('');
+:root {
+    --fonte-titulo: sans-serif;
+    --fonte-texto: monospace;
+}
 
 * {
     padding: 0;
