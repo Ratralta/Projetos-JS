@@ -1,0 +1,109 @@
+:root {
+--texto-fonte : 'Poppins', sans-serif;
+--texto-size-base-1 : 15px;
+--texto-size-base-2 : 26px;
+--texto-size-base-3 : 40px;
+--texto-size-title : 50px;
+
+--cor-calor : 0; /* vai servir para fazer efeito de caso o id "temperatura_valor" seja muito alto, o texto fique vermelho*/
+--cor-frio : 255 /* pro frio */
+}
+
+
+/* TAG QUE MEXE EM TUDO ----------------------------*/
+main { 
+    height: 1000px;
+    width: 100%;
+    font-family: var(--texto-fonte); /* mudando a fonte do site todo*/
+}
+/*----------------------------*/
+
+
+
+/* CLASS :: titulo_pidente ----------------------------*/
+.titulo_pidente {
+    display: grid;
+    justify-items: center;
+}
+
+.titulo_pidente h1 {
+    font-size: var(--texto-size-title);
+}
+
+.titulo_pidente  h2{
+    font-size: var(--texto-size-base-3);
+}
+/*----------------------------*/
+
+
+
+/* CLASS :: input_valor_e_type ----------------------------*/
+.input_valor_e_type {
+    height: 100px;
+
+    display:block;
+    justify-self: center;
+}
+
+.input_valor_e_type input {
+font-size: var(--texto-size-base-2);
+}
+
+.input_valor_e_type select {
+height: var(--texto-size-base-3);
+}
+/*----------------------------*/
+
+
+
+/* CLASS :: input_type ----------------------------*/
+.input_type {
+    height: 100px;
+
+
+    display:grid;
+    justify-self: center;
+}
+
+.input_type h2 {
+    font-size: var(--texto-size-base-3);
+}
+
+.input_type select {
+    font-size: var(--texto-size-base-2);
+}
+/*----------------------------*/
+
+
+/* CLASS :: result_botao ----------------------------*/
+
+.result_botao {
+    display: block;
+    justify-self: center;
+    margin-top: 30px;
+
+}
+
+.result_botao button {
+    height: 150px;
+    width: 150px;
+}
+/*----------------------------*/
+
+
+/* CLASS :: result_calculo ----------------------------*/
+
+.result_calculo {
+    display: flex;
+    justify-self: center; /* alinha no eixo horizontal */
+    margin-top: 30px;
+
+    background-color: rgb(var(--cor-calor), 0, var(--cor-frio)); /* aonde o calor afeta*/ 
+    border: solid 5px rgb(var(--cor-calor), 0, 0);
+}
+
+.result_calculo p {
+    font-size: var(--texto-size-title);
+
+}
+/*----------------------------*/

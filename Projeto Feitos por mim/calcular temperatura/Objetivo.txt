@@ -1,0 +1,2 @@
+Fazer um convertedor de temperatura, onde tenha o input de um valor, botões para 
+converter para o tipo (celso, fahrenheit, kelvin) e amostrar o resultado 

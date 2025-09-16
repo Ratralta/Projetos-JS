@@ -1,0 +1,72 @@
+:root { /* Variaveis globais*/
+--texto-fonte : sans-serif;
+--texto-texto : monospace;
+--texto-cor-1 : rgb(100,200,0);
+--texto-cor-2 : rgb(0,200,100);
+--texto-cor-3 : rgb(100,200,255);
+}
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+    list-style: none;
+    background-color: rgb(100, 0, 200);
+}
+
+h1 {
+    font-size: 3em;
+    font-family: var(--texto-fonte);
+    color : var(--texto-cor-1)
+}
+
+h3 {
+    font-size: 1.5em;
+    font-family: var(--texto-fonte);
+}
+
+.principal {
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    background-color: white;
+    font-family: var(--texto-fonte);
+    font-size: 2em;
+    padding: 20px;
+    width: 60%;
+}
+
+button {
+    background-color: khaki;
+    padding: 10px;
+    width: 60%;
+    font-family: var(--texto-fonte);
+    opacity: 0.8;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 1;
+}
+
+.resultado-tabuada {
+    border: 2px dotted var(--texto-cor-3);
+    line-height: 2em;
+    width: 15%;
+    font-family: var(--texto-fonte);
+    font-size: 1.4em;
+    background-color: aliceblue;
+}

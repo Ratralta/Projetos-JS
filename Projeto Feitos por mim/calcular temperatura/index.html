@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperaturalizador</title>
+    <link rel="stylesheet" href="the_css.css">
+</head>
+<body>
+    <main>
+        <div class="titulo_pidente">
+            <h1> TEMPERATURALIZADOR </h1>
+            <h2> Coloca o valor e o tipo </h2>
+        </div>
+
+        <div class="input_valor_e_type">
+            <input type="text" id="input_temp_valor" placeholder="VALOR"> <!-- VALOR INPUT-->
+
+            <select name="sele_temperatura_1" id="input_temp_tipo">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+        </div>
+
+
+        <div class="input_type">
+            <h2>Conveter para :</h2>
+            <select name="sele_temperatura_2" id="temperatura_tipo">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <div class="result_botao">
+            <button onclick="conveter()"> CONVETER!!! </button>
+        </div>
+
+        <div class="result_calculo">
+            <p></p> <!-- Aqui vai guardar o resultado do calculo-->
+        </div>
+    </main>  
+    <script src="calcular_temperatura.js"></script>  
+</body>
+</html>
