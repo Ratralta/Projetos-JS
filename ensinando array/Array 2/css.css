@@ -1,0 +1,57 @@
+:root {
+--texto-fonte : sans-serif;
+--texto-texto : monospace;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    list-style: none;
+    background-color: rgb(207, 245, 195);
+}
+
+h1 {
+    font-family: var(--texto-fonte);
+    font-size: 2.5em;
+    margin: 2%;
+}
+
+h3 {
+    font-size: 2em;
+    font-family: var(--texto-fonte);
+    margin-bottom: 20px;
+}
+
+h6 {
+    font-size: 1.0em;
+    font-family: var(--texto-fonte);
+    margin-bottom: 20px;
+}
+
+.botao {
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 30%;
+    font-family: var(--texto-fonte);
+    background-color: rgb(120, 197,97);
+    border-top-left-radius: 20px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    transition: 0.6s;
+    font-weight: bold;
+    background-color: rgb(79,141,60);
+}
+
+.caixa { 
+    background-color: aliceblue;
+    font-size: 2em;
+    font-family: var(--texto-fonte);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 2% 20%;
+}
+
