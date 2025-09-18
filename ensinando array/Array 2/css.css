@@ -55,3 +55,8 @@ h6 {
     margin: 2% 20%;
 }
 
+.caixa#tabela{
+    display: block;
+    justify-self: center;
+
+}
