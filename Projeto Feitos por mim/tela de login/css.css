@@ -1,0 +1,56 @@
+/* BASE */
+.fundo { 
+    display: grid;
+    justify-content: center;
+}
+:root { /* variaveis */
+    --input_borda_circulada : 15px;
+    --input_tamanho_comprimento : 400px;
+    --input_tamanho_largura : 30px
+}
+.login_area{ /* area do login está no meio */
+    justify-self: center;
+}
+/* BASE */
+
+/* mexendo na imagem */
+.titulo img{
+    width: 500px;
+}
+/* mexendo na imagem */
+
+
+/* mexendo em login area */ 
+.login_area .input_login .text input{
+    border-radius: var(--input_borda_circulada);
+    width: var(--input_tamanho_comprimento);
+    height: var(--input_tamanho_largura);
+}
+
+.login_area .input_login .radio{
+   display: flex;
+   justify-content: space-around;
+}
+
+.login_area .confirmar input{
+    border-radius: var(--input_borda_circulada);
+    width: var(--input_tamanho_comprimento);
+    height: var(--input_tamanho_largura);
+}
+
+.login_area .confirmar input:hover{
+    transition: 0.7s;
+    background-color: red;
+}
+/* mexendo em login area */ 
+
+    
+
+
+h1 { 
+    font-size: 30px;
+    font-family: sans-serif;
+    color: red;
+}
+
+
