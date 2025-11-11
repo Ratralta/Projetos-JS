@@ -14,14 +14,15 @@
 
     <div class="fundo">
         <div class="titulo">
-            <img src="imagens/pronatec.jpeg" alt="">
+            <img src="imagens/pronatec.jpeg" alt=""> 
         </div>
 
             <div class="login_area">
                 <div class="input_login">
+
                     <div class="radio">
                         <div class="radio_1">
-                            <input type="radio" name="quem" value="aluno"> <a>Aluno</a> 
+                            <input type="radio" name="quem" value="aluno" checked> <a>Aluno</a> 
                         </div>
                         <div class="radio_2">
                             <input type="radio" name="quem" value="professor"> <a>Professor</a> 
@@ -31,19 +32,20 @@
                     <div class="text">
                         <input type="text" id="nome" placeholder="Nome "> <br>
                         <input type="text" id="senha" placeholder="Senha "> <br>
-                        <input type="text" id="senha_confirmar" placeholder="Confirmar senha ">
+                        <input type="text" id="senha_confirmar" placeholder="Confirmar senha "> <br>
+                        <input type="submit" id="submit" onclick="checar_senha()" value="Entrar"> 
+                    </div>
+
+                    
+                    <div class="excecoes">
+                        <a href="https://www.google.com/search?q=skill+issue&oq=skill+issue&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhA0gEIMjc4MWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8">
+                            Esqueceu a senha?
+                        </a>
                     </div>
                 </div>
 
-                <div class="confirmar">
-                    <input type="submit" onclick="checar_senha()" value="Entrar"> </input>
-                </div>
 
-                <div class="excecoes">
-                    <a href="https://www.google.com/search?q=skill+issue&oq=skill+issue&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhA0gEIMjc4MWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8">
-                         Esqueceu a senha?
-                    </a>
-                </div>
+
             </div>
 
     </div>

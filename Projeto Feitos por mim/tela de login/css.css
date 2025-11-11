@@ -1,21 +1,23 @@
 /* BASE */
+
+
 .fundo { 
-    display: grid;
-    justify-content: center;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    height: 100%;
 }
 :root { /* variaveis */
     --input_borda_circulada : 15px;
-    --input_tamanho_comprimento : 400px;
+    --input_tamanho_comprimento : 290px;
     --input_tamanho_largura : 30px
-}
-.login_area{ /* area do login está no meio */
-    justify-self: center;
 }
 /* BASE */
 
 /* mexendo na imagem */
 .titulo img{
     width: 500px;
+    margin-bottom: 30px;
 }
 /* mexendo na imagem */
 
@@ -32,25 +34,23 @@
    justify-content: space-around;
 }
 
-.login_area .confirmar input{
-    border-radius: var(--input_borda_circulada);
-    width: var(--input_tamanho_comprimento);
-    height: var(--input_tamanho_largura);
-}
-
-.login_area .confirmar input:hover{
+#submit:hover{
     transition: 0.7s;
     background-color: red;
 }
-/* mexendo em login area */ 
 
-    
+.input_login { /* area do login está no meio */
+    width: var(--input_tamanho_comprimento);
+    display: grid;
+}
 
-
-h1 { 
-    font-size: 30px;
-    font-family: sans-serif;
-    color: red;
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-items:right;
 }
 
 
+/* mexendo em login area */ 
+
+    
