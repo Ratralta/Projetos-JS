@@ -5,16 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
-    <link rel="stylesheet" href="css.css">
-    <script src="check_senha.js"></script>
-    <script src="check.js"></script>
+    <link rel="stylesheet" href="CSS/login_css.css">
 
 </head>
 <body>
 
     <div class="fundo">
         <div class="titulo">
-            <img src="imagens/pronatec.jpeg" alt=""> 
+            <img src="imagens/pronatec.jpeg"> 
         </div>
 
             <div class="login_area">
@@ -30,10 +28,10 @@
                         </div>
                     </div>
                     <div class="text">
-                        <input type="text" id="nome" placeholder="Nome "> <br>
-                        <input type="text" id="senha" placeholder="Senha "> <br>
-                        <input type="text" id="senha_confirmar" placeholder="Confirmar senha "> <br>
-                        <input type="submit" id="submit" onclick="checar_senha()" value="Entrar"> 
+                        <input type="text" id="nome" placeholder="Nome "> 
+                        <input type="text" id="senha" placeholder="Senha "> 
+                        <button type="submit" id="submit" onclick="checar_senha()" value="entrar"> Entrar </button>
+                        <button type="submit" id="cancel" value="sair"> Cancelar </button> 
                     </div>
 
                     

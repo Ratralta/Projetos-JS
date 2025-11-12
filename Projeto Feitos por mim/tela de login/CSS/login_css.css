@@ -1,0 +1,84 @@
+/* BASE */
+body {
+    height: 100%;
+    background: #1fa9c2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fundo {
+    display: flex;      
+    flex-direction: column;
+    align-items: center;
+}
+
+
+:root { /* variaveis */
+    --input_borda_circulada : 25px;
+    --input_tamanho_comprimento : 450px;
+    --input_tamanho_largura : 40px
+}
+/* BASE */
+
+/* mexendo na imagem */
+.titulo img{
+    width: 670px;
+}
+/* mexendo na imagem */
+
+
+/* mexendo em login area */ 
+.login_area .input_login .text input{
+    border-radius: var(--input_borda_circulada);
+    width: var(--input_tamanho_comprimento);
+    height: var(--input_tamanho_largura);
+    text-align: center;
+}
+
+.login_area .input_login .text button{
+    border-radius: var(--input_borda_circulada);
+    width: var(--input_tamanho_comprimento);
+    height: var(--input_tamanho_largura);
+}
+
+.login_area .input_login .radio{
+   display: flex;
+   justify-content: space-around;
+}
+
+.input_login { /* area do login está no meio */
+    width: var(--input_tamanho_comprimento);
+    display: grid;
+}
+
+.text {
+    height: calc(var(--input_tamanho_largura)*4 * 1.25); /* altura da div "text", para espaçalas devidamente com "justify-content" */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+/* mexendo em login area */ 
+
+ 
+
+/* mexendo nos botões "ENTRAR" e "CANCELAR" */
+#submit{
+    background-color: #2674f0;
+}
+#submit:hover{
+    transition: 0.3s;
+    background-color: #194180;
+    cursor :pointer;
+}
+
+#cancel{
+    background-color: #626366;
+}
+
+#cancel:hover{
+    transition: 0.3s;
+    background-color: #3a3b3d;
+    cursor :pointer;
+}
+/* mexendo nos botões "ENTRAR" */
