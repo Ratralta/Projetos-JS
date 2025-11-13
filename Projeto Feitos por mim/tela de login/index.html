@@ -27,11 +27,14 @@
                             <br>
                         </div>
                     </div>
+                    
                     <div class="text">
-                        <input type="text" id="nome" placeholder="Nome "> 
-                        <input type="text" id="senha" placeholder="Senha "> 
-                        <button type="submit" id="submit" onclick="checar_senha()" value="entrar"> Entrar </button>
-                        <button type="submit" id="cancel" value="sair"> Cancelar </button> 
+                        <form action="home.html" method="get" name="cadastro">
+                            <input type="text" id="nome" placeholder="Nome " required> 
+                            <input type="password" id="senha" placeholder="Senha " required> 
+                            <button type="submit" id="submit" value="entrar"> Entrar </button>
+                            <button type="submit" id="cancel" value="sair"> Cancelar </button> 
+                        </form>
                     </div>
 
                     
@@ -41,9 +44,6 @@
                         </a>
                     </div>
                 </div>
-
-
-
             </div>
 
     </div>
