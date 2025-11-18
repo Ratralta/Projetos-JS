@@ -2,9 +2,6 @@
 body {
     height: 100%;
     background: #1fa9c2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .fundo {
@@ -52,10 +49,10 @@ body {
     display: grid;
 }
 
-.text {
+.text form{
     height: calc(var(--input_tamanho_largura)*4 * 1.25); /* altura da div "text", para espaçalas devidamente com "justify-content" */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
 }
 /* mexendo em login area */ 
@@ -82,3 +79,10 @@ body {
     cursor :pointer;
 }
 /* mexendo nos botões "ENTRAR" */
+
+
+/* mexendo na div "excecoes" */
+.excecoes a{
+    color: white;
+}
+/* mexendo na div "excecoes" */
